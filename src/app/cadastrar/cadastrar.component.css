@@ -1,7 +1,47 @@
-#img-bg{
-    background-color: brown;/*background-image: url('https://i.imgur.com/w3d95jN.jpg');*/
+#imgBg{
+    animation: changeBackgroundImage 7s infinite;
+    display: flex;
+    /*background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-image: url('https://i.imgur.com/w3d95jN.jpg');
     min-width: 695;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+}
+
+#fundoc{
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    height: 630px;
+    background-color: #FEDA77;
+}
+
+@keyframes changeBackgroundImage{
+    0%{
+        background-color: #F58529;
+    }
+    25%{
+        background-color: #515BD4;
+    }
+    35%{
+        background-color: #DD2A7B;
+    }
+    45%{
+        background-color: #2BAEB3;
+    }
+    55%{
+        background-color: #F495A1;
+    }
+    65%{
+        background-color: #6B5E8B;
+    }
+    75%{
+        background-color: #D04A3E;
+    }
+    100%{
+        background-color: #F58529;
+    }
 }

@@ -1,7 +1,20 @@
 #img-bg{
-    background-color: brown;/*background-image: url('https://i.imgur.com/w3d95jN.jpg');*/
-    min-width: 695;
+    background-image: url('https://i.imgur.com/aOr7yZT.png');
+    min-width: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
+
+.glass{
+    backdrop-filter: blur(16px);
+    border-radius: 12px;
+    background-color: #4F4F4F;
+}
+
+.container-fluid{
+    height: 627px;
+}
+
