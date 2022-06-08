@@ -24,6 +24,14 @@ export class TemaComponent implements OnInit {
       alert("Sua seção expirou")
       this.router.navigate(["/entrar"])
     }
+    this.findAllTemas()
+  }
+
+  findAllTemas(){
+    this.temaService.getAllTema().subscribe({
+      next: (resp: Tema[]) => {
+        this.listaTemas = resp;
+      }})
   }
 
   cadastrar(){
@@ -31,6 +39,7 @@ export class TemaComponent implements OnInit {
       next: (resp: Tema) => {
         this.tema = resp;
         alert('Tema cadastrado com sucesso')
+        this.findAllTemas()
         this.tema = new Tema();
       }})
   }
