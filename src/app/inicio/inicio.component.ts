@@ -13,7 +13,9 @@ export class InicioComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    window.scroll(0,0)
+
     if(environment.token == ''){
       alert("Sua seção expirou")
       this.router.navigate(["/entrar"])
